@@ -1,6 +1,2 @@
 dist/
 node_modules/
-public/
-vite.config.js
-package-lock.json
-package.json

@@ -67,7 +67,7 @@ function App() {
             <div className="hero-lower"><p>Final-year B.Tech student exploring <strong>software development, AI, machine learning, and generative AI</strong>. I enjoy turning ideas into useful products and learning by building.</p><a className="circle-arrow" href="#work" aria-label="Explore the portfolio"><ArrowDown /></a></div>
           </div>
           <div className="portrait-wrap">
-            <div className="portrait-photo"><img className="portrait-img" src="/assets/kalash-portrait.png" alt="Portrait of Kalash Chauhan" /></div>
+            <div className="portrait-photo"><img className="portrait-img" src={`${import.meta.env.BASE_URL}assets/kalash-portrait.png`} alt="Portrait of Kalash Chauhan" /></div>
             <div className="portrait-caption"><span>KALASH CHAUHAN · CSE</span><span>✳ KANPUR, INDIA</span></div>
             <div className="orbit-sticker">GOOD<br />THINGS<br />AHEAD <b>✳</b></div>
           </div>

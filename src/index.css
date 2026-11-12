@@ -241,3 +241,49 @@ h1 em{
 @keyframes button-breathe{0%,100%{box-shadow:0 0 0 0 #ff4f9a00}50%{box-shadow:0 0 0 5px #ff4f9a16}}
 @media(max-width:700px){.portrait-wrap:before{right:-10px}.portrait-wrap:after{left:-10px}.project-links{gap:7px}.project-live{font-size:8px}}
 @media(prefers-reduced-motion:reduce){.portrait-wrap:before,.portrait-wrap:after,.developer-card:after,.hero-primary,.cert-card:hover .cert-mark{animation:none!important}.skill-card:hover svg,.project-source:hover{transform:none}}
+
+/* Clearer project previews and link affordances */
+.project-visual{display:flex;align-items:center;justify-content:center;padding:52px 8% 30px;background:#1a1016!important;color:var(--ivory)!important}
+.project-visual:before,.project-visual:after{display:none}
+.app-preview{position:relative;width:100%;max-width:540px;min-height:275px;overflow:hidden;border:1px solid #ff4f9a66;border-radius:12px;background:#100b0e;box-shadow:0 22px 50px #0008;transform:rotate(-2deg);transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s}
+.project-card:nth-child(2) .app-preview{transform:rotate(1.4deg)}
+.project-card:hover .app-preview{transform:rotate(0) translateY(-5px) scale(1.015);box-shadow:0 28px 55px #000a,0 0 35px #ff4f9a20}
+.preview-topbar{height:37px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;border-bottom:1px solid #4a2938;background:#160e13}
+.preview-brand{font:600 12px var(--display);color:var(--pink)}
+.preview-status{font:7px var(--mono);letter-spacing:.08em;color:#dfabc2}
+.preview-document,.preview-guide,.preview-trip{padding:22px 24px}
+.preview-heading{font:600 clamp(14px,2vw,22px) var(--display);letter-spacing:-.04em;margin-bottom:17px}
+.preview-heading span{color:var(--pink);margin-left:8px}
+.preview-columns{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.preview-upload,.preview-summary{min-height:154px;border:1px solid #4a2938;border-radius:8px;padding:13px;display:flex;flex-direction:column;gap:8px;background:#150e13}
+.preview-upload{align-items:center;justify-content:center;border-style:dashed;text-align:center}
+.preview-file-icon{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#ff4f9a24;color:var(--pink);font-size:20px}
+.preview-upload b,.preview-summary b{font:500 10px var(--display)}
+.preview-upload small,.preview-summary small{font:7px var(--mono);color:var(--muted);letter-spacing:.08em}
+.preview-file{width:100%;padding:7px;border-radius:5px;background:#26141f;color:#f6c0d7;font:7px var(--mono);text-align:left}
+.preview-summary i{display:block;height:4px;border-radius:4px;background:linear-gradient(90deg,#b73770,#4a2938)}
+.preview-summary i:nth-of-type(2){width:83%}.preview-summary i:nth-of-type(3){width:67%}
+.preview-pill{align-self:flex-start;padding:5px 7px;border-radius:12px;background:#ff4f9a20;color:var(--pink);font:7px var(--mono)}
+.preview-guide>div:first-child{display:flex;flex-direction:column;gap:7px;margin-bottom:17px}
+.preview-guide small,.preview-destination small,.preview-itinerary>small{font:7px var(--mono);letter-spacing:.1em;color:var(--pink)}
+.preview-guide>div:first-child b{font:600 clamp(16px,2.3vw,25px) var(--display);letter-spacing:-.04em}
+.preview-guide>div:first-child span{font:9px var(--mono);color:var(--muted)}
+.preview-roadmap{display:grid;grid-template-columns:26px 1fr auto;gap:9px;align-items:center;padding:9px 0;border-top:1px solid #4a2938}
+.preview-roadmap>span{color:var(--pink);font:9px var(--mono)}.preview-roadmap i{display:none}
+.preview-roadmap b{font:500 9px var(--display)}.preview-roadmap em{font:6px var(--mono);font-style:normal;color:#d989ae}
+.preview-trip{display:grid;grid-template-columns:1fr 1fr;gap:14px;min-height:238px;align-items:stretch}
+.preview-destination{padding:15px;border-radius:8px;background:radial-gradient(ellipse at 80% 20%,#a72c65 0,#3a1530 40%,#1b0f17 78%);display:flex;flex-direction:column;justify-content:space-between}
+.preview-destination b{font:600 clamp(22px,3.8vw,42px)/.9 var(--display);letter-spacing:-.07em}.preview-destination b i{font:italic 400 1em Georgia,serif;color:#ff8db8}
+.preview-destination>span,.preview-itinerary>span{font:6px var(--mono);letter-spacing:.06em;color:#f3b1cc}
+.preview-itinerary{display:flex;flex-direction:column;justify-content:center;gap:11px;padding:14px;border:1px solid #4a2938;border-radius:8px;background:#150e13}
+.preview-itinerary>b{font:500 8px var(--display);padding-bottom:8px;border-bottom:1px solid #4a2938}
+.cert-link{color:inherit;text-decoration:none;cursor:pointer}
+.cert-link:hover{background:#ff4f9a0b}
+.cert-view{font:8px var(--mono);letter-spacing:.07em;color:var(--pink);opacity:.8;white-space:nowrap}
+.about-stats>div:has(a){gap:4px}
+.about-stats a{font:9px var(--mono);color:var(--black);text-decoration:none;border-bottom:1px solid var(--pink);width:max-content}
+.about-stats a:hover{color:#9e1855}
+/* Keep body copy and interaction labels comfortable to read */
+.nav-links a{font-size:11px}.hero-topline,.hero-foot{font-size:11px}.kicker,.eyebrow{font-size:12px}.hero-lower p{font-size:15px}.section-aside{font-size:13px}.project-tag,.project-count,.project-category{font-size:10px}.project-info h3{font-size:23px}.project-description{font-size:13px}.project-stack{font-size:10px}.about-intro{font-size:16px}.quick-facts p,.quick-facts b{font-size:12px}.skill-card h3{font-size:18px}.skill-card p{font-size:12px}.timeline-date{font-size:11px}.timeline-place{font-size:13px}.timeline-note,.cert-card p{font-size:11px}.certification-list .cert-card h3{font-size:18px}.achievement-strip p{font-size:12px}.contact-copy>p{font-size:15px}.social-row a{font-size:10px}.project-live{font-size:10px}
+@media(max-width:700px){.project-visual{padding:48px 6% 25px}.app-preview{min-height:250px}.preview-document,.preview-guide,.preview-trip{padding:18px 15px}.preview-columns{gap:8px}.preview-upload,.preview-summary{padding:9px;min-height:140px}.preview-roadmap{grid-template-columns:23px 1fr;gap:7px}.preview-roadmap em{display:none}.preview-trip{gap:8px;min-height:220px}.preview-itinerary{padding:9px;gap:9px}.preview-itinerary>b{font-size:7px}.certification-list .cert-card h3{font-size:16px}.cert-view{font-size:7px}.project-description{font-size:13px}.skill-card p{font-size:11px}}
+@media(max-width:460px){.cert-view{display:none}.certification-list .cert-card{gap:10px}.cert-mark{min-width:36px;width:36px;height:36px}.preview-trip{grid-template-columns:1fr}.preview-destination{min-height:125px}.preview-itinerary{display:none}.app-preview{min-height:205px}.preview-document{padding:16px 12px}}

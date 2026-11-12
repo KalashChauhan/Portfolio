@@ -208,3 +208,36 @@ h1 em{
 .work-section{padding-top:110px}
 @media(max-width:900px){.nav-links{gap:14px}.nav-links a{font-size:9px}.availability{font-size:8px}.developer-card{left:-20px}}
 @media(max-width:700px){.nav-links{gap:22px}.nav-links a{font-size:13px}.academic-section,.certifications-section{padding-top:76px;padding-bottom:78px}.academic-layout{grid-template-columns:1fr;gap:25px;padding-top:25px}.academic-intro{max-width:390px}.academic-intro svg{margin-bottom:12px}.developer-card{left:-17px;bottom:44px;width:min(245px,76vw);padding:11px 12px}.developer-card pre{font-size:8px}.hero-actions{gap:15px}.about-stats{gap:10px}.about-stats strong{font-size:23px}.about-stats span{font-size:8px}.certification-list .cert-card{gap:12px}.certification-list .cert-card h3{font-size:15px}}
+
+/* Pink and black palette with soft pink tints */
+:root{--black:#100b0e;--pink:#ff4f9a;--yellow:#f5a8ca;--ivory:#ffe9f2;--muted:#c69aad;--line:#4a2938;--rose:#ed82b3}
+.project-card.soft-pink .project-visual{background:var(--yellow);color:var(--black)}
+.project-card.rose .project-visual{background:var(--rose);color:var(--black)}
+.project-card.ivory .project-visual{background:var(--yellow);color:var(--black)}
+.project-links{display:flex;align-items:center;gap:10px;flex:none}
+.project-live{display:inline-flex;align-items:center;gap:5px;color:var(--ivory);font:9px var(--mono);text-decoration:none;border-bottom:1px solid var(--pink);padding-bottom:7px;transition:color .2s,transform .2s}
+.project-live:hover{color:var(--pink);transform:translateY(-2px)}
+.project-source{width:36px;height:36px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--pink);transition:background .2s,color .2s,transform .2s}
+.project-source svg{width:16px;height:16px}
+.project-source:hover{background:var(--pink);color:var(--black);transform:translateY(-3px) rotate(-7deg)}
+.about-stats strong{color:var(--black)}
+.cert-mark{min-width:42px;padding:0 5px;border-color:#ff4f9a88;color:var(--pink);font-size:9px}
+.portrait-wrap{isolation:isolate}
+.portrait-wrap:before,.portrait-wrap:after{position:absolute;z-index:5;pointer-events:none;color:var(--pink);text-shadow:0 0 14px #ff4f9a77}
+.portrait-wrap:before{content:'✦';right:-18px;top:20%;font-size:25px;animation:cute-twinkle 2.1s ease-in-out infinite}
+.portrait-wrap:after{content:'♡';left:-17px;bottom:25%;font:28px var(--display);animation:cute-float 3.2s ease-in-out infinite}
+.developer-card:after{content:'✧';position:absolute;right:-11px;top:-15px;color:var(--pink);font-size:23px;animation:cute-twinkle 1.8s ease-in-out infinite .3s}
+.project-card{transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1),filter .3s}
+.project-card:hover{filter:drop-shadow(0 12px 18px #ff4f9a18)}
+.skill-card svg{transition:transform .3s,color .3s}
+.skill-card:hover svg{color:var(--pink);transform:rotate(-9deg) scale(1.12)}
+.cert-card{transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1),border-color .25s}
+.cert-card:hover{border-color:#ff4f9a88}
+.cert-card:hover .cert-mark{animation:cert-bounce .45s ease}
+.hero-primary{animation:button-breathe 3.6s ease-in-out infinite}
+@keyframes cute-twinkle{0%,100%{opacity:.58;transform:scale(.88) rotate(-8deg)}50%{opacity:1;transform:scale(1.18) rotate(12deg)}}
+@keyframes cute-float{0%,100%{transform:translateY(0) rotate(-8deg)}50%{transform:translateY(-8px) rotate(7deg)}}
+@keyframes cert-bounce{0%,100%{transform:scale(1)}45%{transform:scale(1.14) rotate(-8deg)}}
+@keyframes button-breathe{0%,100%{box-shadow:0 0 0 0 #ff4f9a00}50%{box-shadow:0 0 0 5px #ff4f9a16}}
+@media(max-width:700px){.portrait-wrap:before{right:-10px}.portrait-wrap:after{left:-10px}.project-links{gap:7px}.project-live{font-size:8px}}
+@media(prefers-reduced-motion:reduce){.portrait-wrap:before,.portrait-wrap:after,.developer-card:after,.hero-primary,.cert-card:hover .cert-mark{animation:none!important}.skill-card:hover svg,.project-source:hover{transform:none}}

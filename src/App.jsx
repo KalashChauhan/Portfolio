@@ -91,7 +91,7 @@ function App() {
 
       <section className="about-section" id="about"><div className="section-pad about-grid">
         <div><p className="eyebrow">01 / ABOUT</p><div className="about-doodle">✳</div></div>
-        <div className="about-main"><h2>About <i>Kalash.</i></h2><p className="about-intro">I’m Kalash, a Computer Science and Engineering student at Pranveer Singh Institute of Technology. I enjoy solving problems and building software that makes information and everyday decisions easier to work with. My recent projects explore document intelligence and generative AI for education. I’m looking for an entry-level software engineering opportunity where I can contribute, keep learning, and grow with a team.</p>
+        <div className="about-main"><h2>About <i>Kalash.</i></h2><p className="about-intro">Kalash is a Computer Science and Engineering student at Pranveer Singh Institute of Technology with a strong foundation in programming, problem-solving, and software development. He is focused on applying these skills to real-world problems through software, AI, and machine learning projects, and is seeking an entry-level software engineering opportunity to contribute, keep learning, and grow with a team.</p>
           <div className="quick-facts"><div><span>01</span><p><b>Focus</b><br />Software engineering · AI / ML</p></div><div><span>02</span><p><b>Approach</b><br />Learn by building useful projects</p></div><div><span>03</span><p><b>Currently exploring</b><br />LLMs · RAG · intelligent applications</p></div></div>
           <div className="about-stats"><div><strong>250+</strong><span>LeetCode problems</span></div><div><strong>4★</strong><span>HackerRank problem solving</span></div><div><strong>160</strong><span>GFG practice days</span></div></div>
         </div>
@@ -109,7 +109,7 @@ function App() {
         <div className="section-head"><div><p className="eyebrow">04 / SELECTED PROJECTS</p><h2>Featured<br /><i>creations.</i></h2></div><p className="section-aside">A selection of AI and software<br />projects built through practice.</p></div>
         <div className="project-list">{projects.map((project) => <article className={`project-card ${project.color}`} key={project.n}>
           <div className="project-visual"><span className="project-tag">{project.tag}</span><div className="visual-center"><span className="visual-icon">{project.icon}</span><span className="visual-title">{project.title}</span></div><span className="project-count">/{project.n}</span></div>
-          <div className="project-info"><div><p className="project-category">{project.category}</p><h3>{project.title}</h3><p className="project-description">{project.description}</p><p className="project-stack">{project.stack}</p></div><a href={project.href} target="_blank" rel="noreferrer" aria-label={`View ${project.title} on GitHub`}><MoveUpRight /></a></div>
+          <div className="project-info"><div><p className="project-category">{project.category}</p><h3>{project.title}</h3><p className="project-description">{project.description}</p><p className="project-stack">{project.stack}</p></div><div className="project-links">{project.liveHref && <a className="project-live" href={project.liveHref} target="_blank" rel="noreferrer">Live demo <ArrowUpRight size={13} /></a>}<a className="project-source" href={project.href} target="_blank" rel="noreferrer" aria-label={`View ${project.title} on GitHub`}><Github /></a></div></div>
         </article>)}</div>
       </section>
 

@@ -34,7 +34,7 @@ const education = [
 const certifications = [
   { name: 'Complete Machine Learning and Data Science', issuer: 'GeeksforGeeks Skill Up', year: '2026', mark: 'ML', href: 'https://www.geeksforgeeks.org/courses/' },
   { name: 'Generative AI, LLM & RAG', issuer: 'GeeksforGeeks Skill Up', year: '2026', mark: 'GenAI', href: 'https://www.geeksforgeeks.org/courses/' },
-  { name: 'Introduction to Generative AI', issuer: 'Simplilearn', year: '2025', mark: 'AI', href: 'https://www.simplilearn.com/generative-ai-free-course-skillup' },
+  { name: 'Introduction to Generative AI', issuer: 'Simplilearn', year: '2025', mark: 'AI', href: 'https://www.simplilearn.com/skillup-free-online-courses/generative-ai' },
   { name: 'Data Analytics with Python', issuer: 'NPTEL', year: '2025', mark: 'DA', href: 'https://nptel.ac.in/courses' },
   { name: 'Programming Fundamentals using Python · Part 1', issuer: 'Infosys Springboard', year: '2024', mark: 'Py 1', href: 'https://infyspringboard.onwingspan.com/' },
   { name: 'Programming Fundamentals using Python · Part 2', issuer: 'Infosys Springboard', year: '2025', mark: 'Py 2', href: 'https://infyspringboard.onwingspan.com/' },

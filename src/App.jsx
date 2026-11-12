@@ -11,15 +11,18 @@ const navigation = [
 ];
 
 const projects = [
-  { n: '01', title: 'AI-Based Document Analyser', category: 'NLP · MACHINE LEARNING · FULL STACK', description: 'Built a document Q&A and summarization app with text preprocessing, chunking, semantic representation, and keyword extraction. The custom NLP pipeline generates context-aware responses without external AI APIs.', stack: 'React · Python · Flask · NLP · SQLite', href: 'https://github.com/KalashChauhan/AI-Based-Document-Summarization', color: 'pink', tag: 'DOCUMENT INTELLIGENCE', icon: '✳' },
-  { n: '02', title: 'EduGuide', category: 'GENERATIVE AI · FULL STACK', description: 'Created an education guidance platform that uses student academics, interests, and goals to generate personalized college, stream, and learning-roadmap recommendations.', stack: 'React · Node.js · Express · Gemini API · MongoDB', href: 'https://github.com/KalashChauhan/EduGuide', color: 'yellow', tag: 'AI-POWERED GUIDANCE', icon: '✦' },
+  { n: '01', title: 'AI-Based Document Analyser', category: 'NLP · MACHINE LEARNING · FULL STACK', description: 'Built a document Q&A and summarization app with text preprocessing, chunking, semantic representation, and keyword extraction. Its custom NLP pipeline produces context-aware responses without external AI APIs.', stack: 'React.js · Python · Flask · NLP · Machine Learning · SQLite', href: 'https://github.com/KalashChauhan/AI-Based-Document-Summarization', color: 'pink', tag: 'DOCUMENT INTELLIGENCE', icon: '✳' },
+  { n: '02', title: 'EduGuide', category: 'GENERATIVE AI · FULL STACK', description: 'Created an AI-powered education guidance platform that recommends colleges, streams, and learning roadmaps based on each student’s academic profile, interests, and goals.', stack: 'React · Node.js · Express · Gemini API · MongoDB', href: 'https://github.com/KalashChauhan/EduGuide', color: 'soft-pink', tag: 'AI-POWERED GUIDANCE', icon: '✦' },
+  { n: '03', title: 'Trip Planner', category: 'LOCAL AI · FULL STACK', description: 'Built a planner that creates personalized day-by-day itineraries from travel dates, interests, and trip briefs. It uses Ollama for local language-model planning, an offline destination guide, itinerary checks, interactive editing, and optional trip-history storage.', stack: 'React 19 · Vite · Node.js · Ollama · MySQL · ESLint', href: 'https://github.com/KalashChauhan/Trip_Plan', liveHref: 'https://kalashchauhan.github.io/Trip_Plan/', color: 'rose', tag: 'TRAVEL, PLANNED THOUGHTFULLY', icon: '✧' },
 ];
 
 const skills = [
-  { icon: Code2, name: 'Software development', items: 'C · C++ · Java · Python · JavaScript · React · Node.js · Spring Boot' },
-  { icon: Sparkles, name: 'AI & machine learning', items: 'Scikit-learn · TensorFlow · PyTorch · NLP · OpenCV · NumPy · Pandas' },
-  { icon: Monitor, name: 'Generative AI', items: 'Gemini API · LLM concepts · RAG fundamentals · document Q&A' },
-  { icon: Palette, name: 'Data & foundations', items: 'MySQL · MongoDB · SQLite · OOP · DBMS · OS · Networks · System Design' },
+  { icon: Code2, name: 'Programming languages', items: 'C · C++ · Python · Java · JavaScript' },
+  { icon: Monitor, name: 'Web & backend', items: 'HTML · Tailwind CSS · React · Spring Boot · Node.js · Flask · Django · REST APIs' },
+  { icon: Sparkles, name: 'AI & machine learning', items: 'PyTorch · TensorFlow · Scikit-learn · OpenCV · NLP · Gemini API' },
+  { icon: Palette, name: 'Data & visualization', items: 'NumPy · Pandas · Matplotlib · Seaborn · Data Analytics' },
+  { icon: Code2, name: 'Databases', items: 'MySQL · MongoDB · SQLite' },
+  { icon: Monitor, name: 'Tools & CS foundations', items: 'Git · GitHub · VS Code · Oracle SQL · AWS · Azure · OOP · DBMS · OS · Networks · System Design' },
 ];
 
 const education = [
@@ -30,7 +33,12 @@ const education = [
 
 const certifications = [
   { name: 'Complete Machine Learning and Data Science', issuer: 'GeeksforGeeks Skill Up', year: '2026', mark: 'ML' },
-  { name: 'Generative AI, LLM & RAG', issuer: 'GeeksforGeeks Skill Up', year: '2026', mark: 'AI' },
+  { name: 'Generative AI, LLM & RAG', issuer: 'GeeksforGeeks Skill Up', year: '2026', mark: 'GenAI' },
+  { name: 'Introduction to Generative AI', issuer: 'Simplilearn', year: '2025', mark: 'AI' },
+  { name: 'Data Analytics with Python', issuer: 'NPTEL', year: '2025', mark: 'DA' },
+  { name: 'Programming Fundamentals using Python · Part 1', issuer: 'Infosys Springboard', year: '2024', mark: 'Py 1' },
+  { name: 'Programming Fundamentals using Python · Part 2', issuer: 'Infosys Springboard', year: '2025', mark: 'Py 2' },
+  { name: 'Object Oriented Programming using Python', issuer: 'Infosys Springboard', year: '2025', mark: 'OOP' },
 ];
 
 function App() {
